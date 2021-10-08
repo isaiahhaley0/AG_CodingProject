@@ -1,0 +1,15 @@
+C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\bin\Debug\netstandard2.0\SampleApp.deps.json
+C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\bin\Debug\netstandard2.0\SampleApp.dll
+C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\bin\Debug\netstandard2.0\ref\SampleApp.dll
+C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\bin\Debug\netstandard2.0\SampleApp.pdb
+C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\obj\Debug\netstandard2.0\SampleApp.csproj.AssemblyReference.cache
+C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\obj\Debug\netstandard2.0\SampleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\obj\Debug\netstandard2.0\SampleApp.AssemblyInfoInputs.cache
+C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\obj\Debug\netstandard2.0\SampleApp.AssemblyInfo.cs
+C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\obj\Debug\netstandard2.0\SampleApp.csproj.CoreCompileInputs.cache
+C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\obj\Debug\netstandard2.0\SampleApp.dll
+C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\obj\Debug\netstandard2.0\ref\SampleApp.dll
+C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\obj\Debug\netstandard2.0\SampleApp.pdb
