@@ -13,3 +13,4 @@ C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\ob
 C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\obj\Debug\netstandard2.0\SampleApp.dll
 C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\obj\Debug\netstandard2.0\ref\SampleApp.dll
 C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\obj\Debug\netstandard2.0\SampleApp.pdb
+C:\Users\Isaia\Documents\repos\AG_CodingProject\SampleApp\SampleApp\SampleApp\obj\Debug\netstandard2.0\Views\NamePage.xaml.g.cs

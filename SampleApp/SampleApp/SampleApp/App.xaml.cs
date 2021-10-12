@@ -2,6 +2,9 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using SampleApp.Views;
+using SampleApp.Models;
+
 namespace SampleApp
 {
      public partial class App : Application
@@ -10,7 +13,8 @@ namespace SampleApp
           {
                InitializeComponent();
 
-               MainPage = new MainPage();
+               MainPage = new NavigationPage(new MainPage(new User()));
+             
           }
 
           protected override void OnStart()
