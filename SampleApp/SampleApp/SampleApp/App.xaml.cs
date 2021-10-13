@@ -18,6 +18,7 @@ namespace SampleApp
                test.phoneNumber = "(303)885-2465";
                test.email = "isaiah.haley.0@gmail.com";
                test.bio = "Test about me text";
+               test.profilePicture = "testImage.jpg";
                MainPage = new NavigationPage(new MainPage(test));
              
           }

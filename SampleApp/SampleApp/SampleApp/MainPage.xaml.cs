@@ -25,8 +25,14 @@ namespace SampleApp
             
                BindingContext = sample;
 
-          }
+                
 
+          }
+          private async void OnProfileTapped(object sender, EventArgs e)
+          {
+               var photoEditor = new PhotoPage(ref sample);
+               await Navigation.PushAsync(photoEditor);
+          }
           private async void OnNameTapped(object sender, EventArgs e)
           {
                var nameEditor = new NamePage(ref sample);

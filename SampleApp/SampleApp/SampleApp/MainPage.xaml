@@ -8,6 +8,9 @@
         <Frame>
             <Label Text="Edit Profile" HorizontalTextAlignment="Center" TextColor="Blue"  FontSize="36"></Label>
         </Frame>
+        
+            <ImageButton Clicked="OnProfileTapped" HeightRequest="150" x:Name="profileImage" BackgroundColor="White" Source="{Binding profilePicture}"></ImageButton>
+         
         <Frame>
             <Label TextColor="Gray" >
                 

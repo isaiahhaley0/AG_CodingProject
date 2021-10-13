@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleApp.Views.PhotoPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ImageButton Source="{Binding profilePicture}" Clicked="OnPhotoClicked"></ImageButton>
+            <Button Text="Update" Clicked="OnUpdateButtonClicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

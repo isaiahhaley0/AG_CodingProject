@@ -7,10 +7,27 @@ namespace SampleApp.Models
 {
      public class User : INotifyPropertyChanged
      {
-          string FirstName, LastName, PhoneNumber, Email, Bio;
+          string FirstName, LastName, PhoneNumber, Email, Bio, ProfilePicture;
           public User()
           {
                
+          }
+
+          public string profilePicture
+          {
+               get
+               {
+                    return ProfilePicture;
+               }
+               set
+               {
+                    ProfilePicture = value;
+                    if(PropertyChanged != null)
+                    {
+                         PropertyChanged(this, new PropertyChangedEventArgs("profilePicture"));
+                    }
+
+               }
           }
           public string firstName
           {
