@@ -34,6 +34,11 @@ namespace SampleApp
                await Navigation.PushAsync(nameEditor);
 
           }
+          private async void OnEmailTapped(object sender, EventArgs e)
+          {
+               var emailEditor = new emailPage(ref sample);
+               await Navigation.PushAsync(emailEditor);
+          }
 
      }
 }

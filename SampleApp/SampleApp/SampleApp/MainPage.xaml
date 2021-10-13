@@ -56,7 +56,9 @@
                         <Span x:Name="emailDisplay" FontSize ="24" Text="{Binding email}" ></Span>
                     </FormattedString>
                 </Label.FormattedText>
-                
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnEmailTapped"/>
+                </Label.GestureRecognizers>
 
             </Label>
         </Frame>
