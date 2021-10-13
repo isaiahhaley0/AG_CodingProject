@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
             <ImageButton Source="{Binding profilePicture}" Clicked="OnPhotoClicked"></ImageButton>
-            <Button Text="Update" Clicked="OnUpdateButtonClicked"></Button>
+            <Button StyleClass="updateButton"  Text="Update" Clicked="OnUpdateButtonClicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

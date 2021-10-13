@@ -4,11 +4,11 @@
              x:Class="SampleApp.Views.emailPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="What's Your Email?"/>
+            <Label StyleClass="prompt" Text="What's Your Email?"/>
             <Frame>
                 <Entry x:Name="email" Placeholder="Timcook@icloud.com"></Entry>
             </Frame>
-            <Button Text="Update" Clicked="OnUpdateButtonClicked"></Button>
+            <Button StyleClass="updateButton"  Text="Update" Clicked="OnUpdateButtonClicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

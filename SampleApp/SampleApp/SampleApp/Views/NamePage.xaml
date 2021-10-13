@@ -2,16 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Name Page"
-             x:Class="SampleApp.Views.NamePage">
+             x:Class="SampleApp.Views.NamePage"
+             >
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="What's Your Name?" HorizontalTextAlignment="Center" FontSize="Large"></Label>
+            <Label StyleClass="prompt" Text="What's Your Name?"></Label>
             <Grid RowDefinitions="Auto" ColumnDefinitions="*, *">
                 <Entry x:DataType="x:String" x:Name="fName" Placeholder="First Name" HorizontalTextAlignment="Center" Grid.Column="0"></Entry>
                 <Entry x:Name="lName" Placeholder="Last Name" HorizontalTextAlignment="Center" Grid.Column="1"></Entry>
                 
             </Grid>
-            <Button Text="Update" Clicked="OnButtonCliked"></Button>
+            <Button StyleClass="updateButton" Text="Update" Clicked="OnButtonCliked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

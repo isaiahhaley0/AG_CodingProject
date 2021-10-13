@@ -1,8 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SampleApp.MainPage">
-     
+             xmlns:system="clr-namespace:System;assembly=netstandard"
+             x:Class="SampleApp.MainPage"
+             StyleClass="contentPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Resources>
+        <StyleSheet Source="/Assets/styles.css" />
+    </ContentPage.Resources>
     <StackLayout>
         
         <Frame>
@@ -11,15 +16,15 @@
         
             <ImageButton Clicked="OnProfileTapped" HeightRequest="150" x:Name="profileImage" BackgroundColor="White" Source="{Binding profilePicture}"></ImageButton>
          
-        <Frame>
+        <Frame StyleClass="menuItem">
             <Label TextColor="Gray" >
                 
                 <Label.FormattedText>
                     
                     <FormattedString>
                         <Span Text="Name"></Span>
-                        
-                        <Span x:Name="nameDisplay" FontSize ="24" >
+                        <Span Text="{x:Static system:Environment.NewLine}"/>
+                        <Span x:Name="nameDisplay" FontSize ="16" TextColor="Black">
                             <Span.Text>
                                 <MultiBinding StringFormat="{}{0} {1}">
                                     <Binding Path="firstName" />
@@ -34,15 +39,15 @@
                 </Label.GestureRecognizers>
             </Label>
         </Frame>
-        <Frame>
+        <Frame StyleClass="menuItem">
             <Label TextColor="Gray">
 
                 <Label.FormattedText>
 
                     <FormattedString>
-                        <Span Text="Phone Number\n"></Span>
-
-                        <Span x:Name="phoneDisplay" FontSize ="24" Text="{Binding phoneNumber}"></Span>
+                        <Span Text="Phone Number"></Span>
+                        <Span Text="{x:Static system:Environment.NewLine}"/>
+                        <Span x:Name="phoneDisplay"  TextColor="Black" FontSize ="16" Text="{Binding phoneNumber}"></Span>
                     </FormattedString>
                 </Label.FormattedText>
                 <Label.GestureRecognizers>
@@ -50,15 +55,15 @@
                 </Label.GestureRecognizers>
             </Label>
         </Frame>
-        <Frame>
+        <Frame StyleClass="detail">
             <Label TextColor="Gray">
 
                 <Label.FormattedText>
 
                     <FormattedString>
-                        <Span Text="Email\n"></Span>
-
-                        <Span x:Name="emailDisplay" FontSize ="24" Text="{Binding email}" ></Span>
+                        <Span Text="Email"></Span>
+                        <Span Text="{x:Static system:Environment.NewLine}"/>
+                        <Span x:Name="emailDisplay" FontSize ="16"  TextColor="Black" Text="{Binding email}" ></Span>
                     </FormattedString>
                 </Label.FormattedText>
                 <Label.GestureRecognizers>
@@ -73,9 +78,9 @@
                 <Label.FormattedText>
 
                     <FormattedString>
-                        <Span Text="Tell us about yourself.\n"></Span>
-
-                        <Span x:Name="bioDisplay" FontSize ="24" Text="{Binding bio}" ></Span>
+                        <Span Text="Tell us about yourself."></Span>
+                        <Span Text="{x:Static system:Environment.NewLine}"/>
+                        <Span x:Name="bioDisplay" TextColor="Black" FontSize ="16" Text="{Binding bio}" ></Span>
                     </FormattedString>
                 </Label.FormattedText>
                 <Label.GestureRecognizers>

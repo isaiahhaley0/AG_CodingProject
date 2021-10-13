@@ -13,6 +13,10 @@ namespace SampleApp.Views
      public partial class NamePage : ContentPage
      {
           User temp;
+
+          //Similar for all views
+          //passes a ref to the user object so updates will be seen on the main page
+          //
           public NamePage(ref User myUser)
           {
                InitializeComponent();
@@ -26,6 +30,7 @@ namespace SampleApp.Views
                temp.firstName = newFirstName;
                var newLastName = lName.Text;
                temp.lastName = newLastName;
+               //Updates and returns to main page
                await Navigation.PopToRootAsync();
           }
      }

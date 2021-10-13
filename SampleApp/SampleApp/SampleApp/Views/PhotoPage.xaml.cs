@@ -34,7 +34,7 @@ namespace SampleApp.Views
           }
           public async void OnUpdateButtonClicked(object sender, EventArgs e)
           {
-               
+               //Updates and returns to main page
                await Navigation.PopToRootAsync();
           }
      }

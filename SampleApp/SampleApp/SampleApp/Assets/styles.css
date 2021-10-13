@@ -1,0 +1,24 @@
+﻿.detail{
+     color: red;
+}
+
+.menuItem{
+     border-top: 2px solid grey;
+}
+
+.updateButton{
+     background-color: black;
+     color: white;
+     margin: 4 4 4 4;
+}
+
+.contentPage{
+     background-color:white;
+     color: black;
+}
+
+.prompt {
+     color: black;
+     font-style: bold;
+     font-size: large;
+}

@@ -9,7 +9,7 @@
                 <Editor x:Name="bioEditor" VerticalOptions="Fill"></Editor>
             </Frame>
             
-            <Button Clicked="OnUpdateButtonClicked" Text="Update"></Button>
+            <Button StyleClass="updateButton" Clicked="OnUpdateButtonClicked" Text="Update"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

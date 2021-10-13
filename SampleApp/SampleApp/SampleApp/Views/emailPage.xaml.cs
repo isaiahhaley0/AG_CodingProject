@@ -24,6 +24,7 @@ namespace SampleApp.Views
           {
                var newEmail = email.Text;
                myUser.email = newEmail;
+               //Updates and returns to main page
                await Navigation.PopToRootAsync();
           }
      }

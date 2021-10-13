@@ -36,6 +36,7 @@ namespace SampleApp.Views
                          formattedPhone += "-";
                     }
                }
+               //Updates and returns to main page
                myUser.phoneNumber = formattedPhone;
                await Navigation.PopToRootAsync();
 

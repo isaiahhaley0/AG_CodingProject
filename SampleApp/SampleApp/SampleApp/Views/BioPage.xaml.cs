@@ -23,6 +23,7 @@ namespace SampleApp.Views
           {
                var newBio = bioEditor.Text;
                myUser.bio = newBio;
+               //Updates and returns to main page
                await Navigation.PopToRootAsync();
 
           }
