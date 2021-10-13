@@ -45,5 +45,10 @@ namespace SampleApp
                var bioEditor = new BioPage(ref sample);
                await Navigation.PushAsync(bioEditor);
           }
+          private async void OnPhoneTapped(object sender, EventArgs e)
+          {
+               var phoneEditor = new PhonePage(ref sample);
+               await Navigation.PushAsync(phoneEditor);
+          }
      }
 }

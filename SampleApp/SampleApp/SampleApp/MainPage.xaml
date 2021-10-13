@@ -42,7 +42,9 @@
                         <Span x:Name="phoneDisplay" FontSize ="24" Text="{Binding phoneNumber}"></Span>
                     </FormattedString>
                 </Label.FormattedText>
-
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnPhoneTapped"/>
+                </Label.GestureRecognizers>
             </Label>
         </Frame>
         <Frame>
