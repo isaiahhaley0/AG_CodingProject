@@ -5,7 +5,7 @@
 
  This is a Xamarin.Forms app. Visual Studio is needed to run it, but setup should be minimal. If you don't have Xamarin.forms installed there is a installation guide [here](https://docs.microsoft.com/en-us/xamarin/get-started/installation/?pivots=macos).
  
-  After installing Xamarin and forking/cloning the repository selecting SampleApp.sln should load the project. 
+  After installing Xamarin and forking/cloning the repository selecting SampleApp.sln (located in the SampleApp folder) should load the project. 
 
 ## Running
 
