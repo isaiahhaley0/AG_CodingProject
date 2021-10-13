@@ -12,9 +12,21 @@ namespace SampleApp.Views
      [XamlCompilation(XamlCompilationOptions.Compile)]
      public partial class NamePage : ContentPage
      {
+          User temp;
           public NamePage(ref User myUser)
           {
                InitializeComponent();
+               temp = myUser;
+               
+
+          }
+          public async void OnButtonCliked(object sender, EventArgs e)
+          {
+               var newFirstName = fName.Text;
+               temp.firstName = newFirstName;
+               var newLastName = lName.Text;
+               temp.lastName = newLastName;
+               await Navigation.PopToRootAsync();
           }
      }
 }

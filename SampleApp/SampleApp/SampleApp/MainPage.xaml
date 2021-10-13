@@ -16,7 +16,14 @@
                     <FormattedString>
                         <Span Text="Name"></Span>
                         
-                        <Span x:Name="nameDisplay" FontSize ="24"></Span>
+                        <Span x:Name="nameDisplay" FontSize ="24" >
+                            <Span.Text>
+                                <MultiBinding StringFormat="{}{0} {1}">
+                                    <Binding Path="firstName" />
+                                    <Binding Path="lastName" />
+                                </MultiBinding>
+                            </Span.Text>
+                        </Span>
                     </FormattedString>
                 </Label.FormattedText>
                 <Label.GestureRecognizers>
@@ -30,9 +37,9 @@
                 <Label.FormattedText>
 
                     <FormattedString>
-                        <Span Text="Phone Number"></Span>
+                        <Span Text="Phone Number\n"></Span>
 
-                        <Span x:Name="phoneDisplay" FontSize ="24"></Span>
+                        <Span x:Name="phoneDisplay" FontSize ="24" Text="{Binding phoneNumber}"></Span>
                     </FormattedString>
                 </Label.FormattedText>
 
@@ -44,9 +51,9 @@
                 <Label.FormattedText>
 
                     <FormattedString>
-                        <Span Text="Email"></Span>
+                        <Span Text="Email\n"></Span>
 
-                        <Span x:Name="emailDisplay" FontSize ="24"></Span>
+                        <Span x:Name="emailDisplay" FontSize ="24" Text="{Binding email}" ></Span>
                     </FormattedString>
                 </Label.FormattedText>
                 
@@ -59,9 +66,9 @@
                 <Label.FormattedText>
 
                     <FormattedString>
-                        <Span Text="Tell us about yourself."></Span>
+                        <Span Text="Tell us about yourself.\n"></Span>
 
-                        <Span x:Name="bioDisplay" FontSize ="24"></Span>
+                        <Span x:Name="bioDisplay" FontSize ="24" Text="{Binding bio}" ></Span>
                     </FormattedString>
                 </Label.FormattedText>
 

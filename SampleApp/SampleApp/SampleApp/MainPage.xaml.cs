@@ -15,22 +15,22 @@ namespace SampleApp
      public partial class MainPage : ContentPage
      {
           User sample;
+
+          public string myName { get { return sample.Name; } }
           public MainPage(User user)
           {
                sample = user;
 
                InitializeComponent();
-               nameDisplay.Text = "\n" + sample.Name;
-               phoneDisplay.Text = "\n" + sample.phoneNumber;
-               emailDisplay.Text = "\n" + sample.email;
-               bioDisplay.Text = "\n" + sample.bio;
-               BindingContext = this;
+            
+               BindingContext = sample;
 
           }
 
           private async void OnNameTapped(object sender, EventArgs e)
           {
                var nameEditor = new NamePage(ref sample);
+               nameEditor.BindingContext = sample;
                await Navigation.PushAsync(nameEditor);
 
           }

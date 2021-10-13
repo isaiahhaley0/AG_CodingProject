@@ -7,11 +7,11 @@
         <StackLayout>
             <Label Text="What's Your Name?" HorizontalTextAlignment="Center" FontSize="Large"></Label>
             <Grid RowDefinitions="Auto" ColumnDefinitions="*, *">
-                <Entry Placeholder="First Name" HorizontalTextAlignment="Center" Grid.Column="0"></Entry>
-                <Entry Placeholder="Last Name" HorizontalTextAlignment="Center" Grid.Column="1"></Entry>
+                <Entry x:DataType="x:String" x:Name="fName" Placeholder="First Name" HorizontalTextAlignment="Center" Grid.Column="0"></Entry>
+                <Entry x:Name="lName" Placeholder="Last Name" HorizontalTextAlignment="Center" Grid.Column="1"></Entry>
                 
             </Grid>
-            <Button Text="Update"></Button>
+            <Button Text="Update" Clicked="OnButtonCliked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
