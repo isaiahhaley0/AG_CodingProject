@@ -73,7 +73,9 @@
                         <Span x:Name="bioDisplay" FontSize ="24" Text="{Binding bio}" ></Span>
                     </FormattedString>
                 </Label.FormattedText>
-
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnBioTapped"/>
+                </Label.GestureRecognizers>
             </Label>
         </Frame>
     </StackLayout>

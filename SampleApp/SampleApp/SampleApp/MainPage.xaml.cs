@@ -40,5 +40,10 @@ namespace SampleApp
                await Navigation.PushAsync(emailEditor);
           }
 
+          private async void OnBioTapped(object sender, EventArgs e)
+          {
+               var bioEditor = new BioPage(ref sample);
+               await Navigation.PushAsync(bioEditor);
+          }
      }
 }
